@@ -1,0 +1,134 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.main-top
+		.composition
+			margin: 0 0 0 25px
+			p
+				font-size: 20px
+			h1
+				font-size: 47px
+			.buttons-container
+				.button
+					a
+						min-width: 230px
+// ≥992px
++media-breakpoint-down(md)
+	.top-line .social
+		padding-left: 15px
+	.main-top
+		.composition
+			margin: 0 0 0 0px
+			p
+				font-size: 18px
+				margin: 0
+			h1
+				font-size: 42px
+				line-height: 73px
+			.buttons-container
+				margin-top: 10px
+				.button
+					a
+						min-width: 200px
+	.skills-bar-container
+		padding-right: 10px
+		min-width: 250px
+	.main-menu
+		display: none
+		padding: 20px
+	.mobile-menu-button
+		display: block
+		position: absolute
+		margin: auto
+		left: 0
+		right: 0
+	.mobile-menu
+		position: absolute
+		z-index: 999
+		width: 100%
+		background-color: #ffffff
+		text-align: center
+		.top-menu
+			background: rgba(#ffffff, .8)
+			width: 100%
+			a
+				color: #000000
+				z-index: 9999
+	.progressbar-title
+		h3
+			font-size: 14px
+		.percent
+			font-size: 14px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.main-top
+		.composition
+
+
+	section.about
+		.buttons-container
+			margin-top: 20px
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.light
+				padding-top: 10px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	header
+		min-height: 500px
+
+	.top-line .social
+		display: none
+
+	.buttons-container
+		flex-direction: column
+	
+	#input-submit
+		min-width: 290px
+
+	.main-top 
+		.composition 
+			h1
+				display: block
+				font-size: 30px
+				line-height: 50px
+				z-index: 1
+			p
+				font-size: 17px
+				padding-bottom: 30px
+
+	.mobile-menu-button
+		z-index: 2
+		
+	h2
+		font-size: 40px
+	p.subtitle
+		font-size: 14px
+	
+	.button
+		padding-top: 10px
+		width: 100%
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
